@@ -206,3 +206,52 @@ footer{
 .social-links a{
     margin-left: 20px;
 }
+.hide{
+    display: none;
+}
+/* responsive styles */
+
+/* mobile devices */
+@media screen and (max-width: 576px){
+    .header{
+        background-image: none;
+    }
+    nav, nav>ul, .banner, .skills-container, .resume-container, .about-info-container, footer{
+        flex-direction: column;
+    }
+    nav>ul{
+        gap: 10px;
+    }
+    .nav-title{
+        display: flex;
+        justify-content: center;
+    }
+    .banner, #what-i-do-description{
+        padding: 30px;
+    }
+    footer, .about{
+        padding: 10px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .banner .profile-picture{
+        width:100%;
+    }
+    .social-links{
+        margin: 0 25%;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        width: 80%;
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+    footer{
+        padding: 30px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }  
+}
